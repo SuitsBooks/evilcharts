@@ -52,7 +52,7 @@ const Page = () => {
       <DocsSubContainer>
         <DocsParagraph>
           Our Chart Components are built with{" "}
-          <DocsLink href="http://recharts.org/" _blank>
+          <DocsLink href="http://recharts.github.io/" _blank>
             recharts
           </DocsLink>{" "}
           and{" "}
