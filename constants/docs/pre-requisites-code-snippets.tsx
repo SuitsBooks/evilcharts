@@ -19,7 +19,7 @@ export const CODE_DOCS_LINKS = {
   INSTALL_TAILWIND_CSS:
     "https://tailwindcss.com/docs/installation/framework-guides/nextjs",
   INSTALL_SHADCN_UI: "https://ui.shadcn.com/docs/installation/next",
-  INSTALL_RECHARTS: "https://recharts.org/en-US/guide/installation",
+  INSTALL_RECHARTS: "https://recharts.github.io/en-US/guide/installation",
 };
 
 export const CODE_SNIPPETS: CodeSnippetProps = {
