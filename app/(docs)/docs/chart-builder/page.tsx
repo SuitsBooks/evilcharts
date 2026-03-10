@@ -336,7 +336,7 @@ export default function ChartBuilderPage() {
                 <span className="text-xs text-muted-foreground">Value</span>
                 <span />
               </div>
-              {data.map((point) => (
+              {data.map((point, index) => (
                 <div
                   key={point.id}
                   className="grid grid-cols-[1fr_80px_32px] gap-2 items-center"
@@ -348,6 +348,7 @@ export default function ChartBuilderPage() {
                     }
                     className="h-7 text-xs"
                     placeholder="Label"
+                    aria-label={`Label for data point ${point.label || `row ${index + 1}`}`}
                   />
                   <Input
                     type="number"
@@ -357,6 +358,7 @@ export default function ChartBuilderPage() {
                     }
                     className="h-7 text-xs"
                     placeholder="0"
+                    aria-label={`Value for data point ${point.label || `row ${index + 1}`}`}
                   />
                   <Button
                     variant="ghost"
@@ -364,6 +366,7 @@ export default function ChartBuilderPage() {
                     className="h-7 w-7 text-muted-foreground hover:text-destructive"
                     onClick={() => removeDataPoint(point.id)}
                     disabled={data.length <= 1}
+                    aria-label="Remove data point"
                   >
                     <Trash2Icon className="size-3" />
                   </Button>
