@@ -6,6 +6,7 @@ import {
   LineChart,
   PieChart,
   RadarChart,
+  SquareCode,
 } from "@/assets/svgs";
 import { SidebarOptionsProps } from "@/types/docs/sidebar-types";
 
@@ -24,6 +25,11 @@ export const SIDEBAR_OPTIONS: SidebarOptionsProps = {
           title: "Prerequisites",
           url: "/docs/prerequisites",
           icon: <BookBookmark />,
+        },
+        {
+          title: "Chart Builder",
+          url: "/docs/chart-builder",
+          icon: <SquareCode />,
         },
       ],
     },
