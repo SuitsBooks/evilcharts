@@ -173,7 +173,7 @@
 */
 
 .page {
-  @apply flex flex-col gap-4 max-w-[800px] mx-auto;
+  @apply flex flex-col gap-4 max-w-[1600px] mx-auto;
 }
 
 .sparkles-bg {
@@ -189,7 +189,6 @@ pre {
 code {
   font-family: var(--font-jetbrains-mono), monospace;
 }
-
 
 code span {
   color: var(--shiki-light) !important;
